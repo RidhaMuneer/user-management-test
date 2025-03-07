@@ -14,7 +14,7 @@ bun dev
 
 ### Required Environment Variables
 
-Before running the project, ensure you have the following environment variables set in your `.env.local` file:
+Before running the project, ensure you have the following environment variables set in your `.env` file:
 
 ```plaintext
 NEXT_PUBLIC_API_BASE_URL=your-api-base-url
