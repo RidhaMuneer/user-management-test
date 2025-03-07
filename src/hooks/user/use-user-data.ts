@@ -28,9 +28,7 @@ const useUserData = (initialPage = 1) => {
   const addUser = async (userData: { email: string; name: string; password: string; role_id: string }) => {
     const response = await createRecord<User, { data: User }>("/user", userData)
 
-    if (page === 1) {
-      setLocalUsers(prev => [...prev, response.data])
-    }
+    setLocalUsers(prev => [...prev, response.data])
 
     return response
   }
